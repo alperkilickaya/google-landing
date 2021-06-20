@@ -110,6 +110,10 @@ li p{
     color: #1a0dab;;
 }
 
+.diller span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .fixed{
     position: fixed;
@@ -141,4 +145,3 @@ li p{
 .alper li {
     margin-right: 5px;
 }
-
