@@ -1,0 +1,144 @@
+*{ /*browser ayarlarını sıfırladık*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ /* tüm sayfanın yüksekliği kadar bir div tanımladık. Scrollbar çıkmaması için*/
+    min-height: 100vh;
+}
+
+li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.nav-header li {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.container-cell:nth-child(1){ /* margin collapse olmaması için*/
+    border: 1px solid white;
+}
+
+.container-cell:nth-child(2){ /*pencerenin kendisine göre konumlandırdım*/
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+ul{ /*li elemanlarının yanındaki simgeyi kaldırdım*/
+    list-style: none;    
+}
+
+ul li{ /*li'ler normalde alt alta gelir. yan yana koydum. */
+    display: inline-block;
+}
+
+.nav-header{ /* ul elementini sağa gönderdim.*/
+    float: right;
+}
+
+.fa-th{ /*fontawesome'dan aldığım ikon*/
+    font-weight: 100;
+}
+
+li p{
+    background-color: #5E4038;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 1.1rem;
+    width: 32px;
+    text-align: center;
+    color: white;
+}
+
+.google-container{
+    clear: both;
+    text-align: center;
+}
+.google-image{
+    
+}
+
+.search-area{
+    border: 1px solid lightgray;
+    width: 33%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.search-area input{
+    width: 75%;
+    height: 40px;
+    border: none;
+    
+}
+
+.lucky input{
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;  
+}
+
+.lucky input:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+.search-area:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    z-index: 5;
+    background-color: white;
+   
+}
+.search-area input:focus{ /*input alanına tıklayınca browserların oluşturduğu mavi outline'ı devre dışı bıraktım*/
+    outline: none;
+}
+
+.diller span{
+    color: #1a0dab;;
+}
+
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;  
+}
+
+.country{
+    margin: 0 10px 10px 10px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 10px 10px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 10px 10px;
+}
+
+.alper{
+    width: 33%;
+}
+
+.float-right{
+    float: right;
+}
+
+.alper li {
+    margin-right: 5px;
+}
+
